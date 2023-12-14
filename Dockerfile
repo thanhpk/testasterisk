@@ -5,7 +5,7 @@ COPY startup.sh startup.sh
 RUN chmod +x startup.sh
 
 RUN rm -rf /etc/asterisk
-	COPY ./etc/asterisk /etc/asterisk
+COPY ./etc/asterisk /etc/asterisk
 
 RUN mkdir /etc/recorded
 # RUN chown asterisk:asterisk -R /etc/asterisk

@@ -2,6 +2,8 @@ version: "3.9"
 services:
   asterisk:
     image: asterisk-test:latest
+    build:
+      context: .
     volumes:
       - type: bind
         source: /etc/recorded
