@@ -12,8 +12,8 @@ COPY ./etc/asterisk/sip.conf /etc/asterisk/sip.conf
 COPY ./etc/asterisk/rtp.conf /etc/asterisk/rtp.conf
 COPY ./etc/asterisk/modules.conf /etc/modules.conf
 
+RUN mkdir /etc/recorded
 # RUN chown asterisk:asterisk -R /etc/asterisk
-
-RUN sed -i "s/113.190.233.117/27.71.226.145/g" /etc/asterisk/pjsip.conf
+RUN sed -i "s/113.190.233.117/103.69.193.142/g" /etc/asterisk/pjsip.conf
 
 CMD ./startup.sh
