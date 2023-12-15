@@ -1,4 +1,5 @@
 #!/bin/bash
 
-docker build -t asterisk-test:latest .
+docker compose build
+docker rm -f asterisk
 docker compose up -d --remove-orphans
